@@ -1,0 +1,283 @@
+/*
+Paleta de colores: 
+Color más oscuro Space cadet: #22223B
+Intermedio Ultra Violet: #4A4E69
+Intermedio Rose quartz: #9A8C98
+Intermedio Pale Dogwood: #C9ADA7
+Color más claro Isabelline: #F2E9E4
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding:0;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    height: 100vh;
+    background-color:#C9ADA7 ;
+}
+
+img{
+    border-radius: 15px;
+}
+
+header{
+    
+        padding: 60px;
+        text-align: center;
+        background-image: url('../img/elmundodeana.png');
+        background-size: cover; 
+    
+}
+header div{ 
+    
+    padding:10px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: #F2E9E4;
+    font-size: 1.5rem;
+    
+
+}
+
+@media (max-width:800px){
+    header{
+        background-position: center;
+    }
+}
+
+/*Estilos navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #22223B;
+    position:sticky;
+    top:0;
+    z-index: 100;
+}
+
+.navbar a{
+    color:#F2E9E4;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color:#F2E9E4;
+    color:#22223B;
+}
+
+@media (max-width:800px){
+    .navbar{
+        flex-direction: column;
+        position:unset;
+    }
+
+    .navbar a{
+        text-align:center;
+    }
+}
+
+/*Estilos parte principal*/
+.principal{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+aside{
+    flex-basis:25%;
+    background-color: #4A4E69;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+main{
+    flex-basis:75%;
+    background-color: #F2E9E4;
+    padding: 20px;
+    padding-left: 40px;
+
+}
+@media (max-width:800px){
+    .principal{
+        flex-direction: column;
+    }
+}
+
+/*Estilos aside*/
+.image img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    transition:0.5s all ease-in-out;
+}
+
+.image:hover img{
+    transform:scale(1.07)
+}
+
+.recom{
+    background-color: #22223B;
+}
+.asideTitle{
+    text-decoration: underline;
+}
+
+@media (max-width:800px){
+    .image img{
+        width: 60%;
+        height:auto;
+    }
+}
+
+/*Estilos main*/
+main h2{
+    text-transform:uppercase;
+    margin-top:10px;
+    color: #22223B;
+    text-align: center;
+}
+main h5{
+    text-align: left;
+}
+
+main p{
+    font-size: 1.3rem;
+}
+main img{
+    width: 100%;
+    height: 20%;
+}
+
+main .LeerMas{
+    background-color: #22223B;
+    color: #F2E9E4;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+main .LeerMas:hover{
+    background-color: #F2E9E4;
+    color: #22223B;
+}
+
+/* Estilos para contenido tipo "post" */
+.post{
+    font-size: 20px;
+    color: black;
+}
+
+
+
+/*Estilos footer*/
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #22223B;
+    color: #F2E9E4;
+}
+
+/*Estilos formularios*/
+form{
+    padding: 50px;
+    background-color: #F2E9E4;
+    text-align: center;
+    height: 100%;
+}
+label{
+    background-color: #22223B;
+    color: #F2E9E4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 40vw 30vw;
+    gap: 15px;
+    margin: auto;
+    width: fit-content;
+    font: 1.2rem;
+    border: 5px dotted #22223B;
+    margin-top: 20vh;
+}
+.suscribir{
+    font-weight: bold;
+    color:#F2E9E4;
+    font-size: 16px;
+    background-color: #4A4E69;
+}
+.borrar{
+    font-weight: bold;
+    font-size: 16px;
+    background-color: red;
+}
+@media (max-width:800px){
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+}
+legend{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/*Estilos textos*/
+.container-fluid{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.texto{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F2E9E4;
+}
+.texto-iframe iframe{
+    width:100%;
+    height: 50vh;
+}
+
+.texto img{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.carousel-item img{
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+@media (max-width:800px) {
+    carousel-item img{
+        object-fit: contain;
+        height: auto;
+    }
+.carousel-inner{
+    object-fit: contain;
+}
+}
+
+/*Estilos cartas*/
+.card-img-top{
+    height: 400px;
+    object-fit: cover;
+}
+.card-title{
+    text-align: unset;
+    text-transform: uppercase;
+    font-weight: bolder;
+}

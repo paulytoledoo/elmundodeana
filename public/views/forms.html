@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo de Ana</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1>El mundo de Ana</h1>
+            <p>Un lugar donde las historias se leen, se viven pero sobretodo, se sienten.</p>
+        </div>
+    </header>
+
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <a href="../../index.html">INICIO</a>
+        <a href="../views/lomasleido.html">LO MÁS LEÍDO</a>
+        <a href="../views/ultimo.html">ÚLTIMOS SUBIDOS</a>
+        <a href="../views/forms.html">SUSCRIBITE</a>
+    </nav>
+    <!--FORMULARIO-->
+    <form action="">
+        <fieldset>
+            <legend>Formulario de suscripción</legend>
+        <label for="nombre">Nombre: </label>
+            <input type="text" name="name" id="nombre" placeholder="juan" maxlength="15">
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="lname" id="apellido">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="bdate" id="fecha">
+            <label for="email">Email: </label>
+            <input type="email" name="Email" id="email" required>
+            <input type="submit" value="SUSCRIBITE" class="suscribir">
+            <input type="reset" value="Borrar" class="borrar">
+        </fieldset>
+    </form>
+
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; Ana Paula Toledo, Potrero Digital 2024</p>
+    </footer>
+</body>
+</html>
